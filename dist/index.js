@@ -951,7 +951,7 @@ __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get(`https://api.github.com/users/
 });
 var data = { msg: 'Hello' };
 __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].component('my-component', {
-    template: '<div>TEST{{ msg }}</div>',
+    template: '<div>TEST{{ msg }}<div>TEST{{ msg }}</div></div>',
     data: function () {
         return data;
     }

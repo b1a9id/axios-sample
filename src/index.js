@@ -10,7 +10,7 @@ axios.get(`https://api.github.com/users/b1a9id/repos`)
     });
 var data = {msg: 'Hello'};
 Vue.component('my-component', {
-    template: '<div>TEST{{ msg }}</div>',
+    template: '<div>TEST{{ msg }}<div>TEST{{ msg }}</div></div>',
     data: function() {
         return data;
     }
