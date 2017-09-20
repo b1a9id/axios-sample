@@ -1,3 +1,4 @@
+import Vue from 'vue';
 import axios from 'axios';
 
 axios.get(`https://api.github.com/users/b1a9id/repos`)
@@ -7,3 +8,11 @@ axios.get(`https://api.github.com/users/b1a9id/repos`)
     .catch(function (response) {
         console.log(response);
     });
+
+Vue.component('my-component', {
+    template: '<div>TEST</div>'
+})
+
+new Vue({
+    el: '#example'
+})

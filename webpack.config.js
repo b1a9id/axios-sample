@@ -8,6 +8,9 @@ module.exports = {
         filename: 'index.js'
     },
     resolve: {
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        },
         extensions: ['*', '.js']
     },
     module: {
