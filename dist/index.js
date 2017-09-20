@@ -949,9 +949,12 @@ __WEBPACK_IMPORTED_MODULE_1_axios___default.a.get(`https://api.github.com/users/
 }).catch(function (response) {
     console.log(response);
 });
-
+var data = { msg: 'Hello' };
 __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].component('my-component', {
-    template: '<div>TEST</div>'
+    template: '<div>TEST{{ msg }}</div>',
+    data: function () {
+        return data;
+    }
 });
 
 new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
