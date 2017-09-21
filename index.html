@@ -7,10 +7,10 @@
     axios sample
     <p>TEST1</p>
     <p>TEST1</p>
-    <div id="example">
-        <my-component></my-component>
+    <div class="example">
+        <my-component v-for="repo in repos" v-bind:comp="repo"></my-component>
     </div>
-    <p>TEST1</p>
+    <p>TEST2</p>
     <p>TEST1</p>
     <p>TEST1</p>
     <p>TEST1</p>
